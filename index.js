@@ -200,3 +200,5 @@ async function checkEmptyChannels() {
 
 // 登录机器人
 client.login(process.env.DISCORD_TOKEN);
+// 🎵 专门用来骗过 Render 端口检测的纯净小网页
+require('http').createServer((req, res) => res.end('Bot is running!')).listen(process.env.PORT || 3000);
