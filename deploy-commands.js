@@ -6,6 +6,11 @@ const commands = [
     new SlashCommandBuilder()
         .setName('valorant')
         .setDescription('发送 Valorant 组队匹配面板'),
+        
+    // 💡 这是新加的介绍指令！
+    new SlashCommandBuilder()
+        .setName('help')
+        .setDescription('查看 Valorant 机器人的全能使用指南！'),
 ].map(command => command.toJSON());
 
 // 准备好与 Discord API 通信的工具
